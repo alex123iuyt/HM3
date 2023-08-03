@@ -1,0 +1,141 @@
+body {
+    background-color: #FFFCFA;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 3rem;
+    min-width: 70rem;
+    height: 20rem;
+    /* background-color: rgba(51, 51, 51, 0.525); */
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+
+.slider-control {
+    bottom: 34rem;
+    transform: translate(-50% 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.pagination {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+
+.dot:hover {
+    background-color: rgba(51, 51, 51, 1);
+
+}
+
+.arrow-slider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+}
+
+.left-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    transform: rotate(180deg);
+    cursor: pointer;
+
+}
+
+.left-arrow:hover {
+
+    background-color: rgba(51, 51, 51, 0.5);
+
+
+}
+
+.right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+
+}
+
+.right-arrow:hover {
+
+    background-color: rgba(51, 51, 51, 0.5);
+
+}
+
+.right-arrow:active {
+
+    background-color: rgba(51, 51, 51, 0.8);
+
+}
+
+.left-arrow:active {
+
+    background-color: rgba(51, 51, 51, 0.8);
+
+}
+
+
+.imageSlider {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    height: 100%;
+    overflow: hidden;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+.selectImage {
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+    background-color: rgba(180, 5, 5, 0.978);
+
+}
+
+.dot {
+    width: 1rem;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

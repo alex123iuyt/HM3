@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="slider" id="slider">
+      <img class="imageSlider" src="/images/1.jpg" alt="" />
+      <img class="imageSlider" src="/images/2.jpg" alt="" />
+      <img class="imageSlider" src="/images/3.jpg" alt="" />
+      <img class="imageSlider" src="/images/2.jpg" alt="" />
+      <img class="imageSlider" src="/images/3.jpg" alt="" />
+      <img class="imageSlider" src="/images/1.jpg" alt="" />
+      <img class="imageSlider" src="/images/4.jpg" alt="" />
+      <img class="imageSlider" src="/images/3.jpg" alt="" />
+
+      <div class="slider-control">
+        <div class="arrow-slider">
+          <div class="left-arrow">
+            <img src="/arrow.svg" alt="" />
+          </div>
+          <div class="right-arrow">
+            <img src="/arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="slider.js"></script>
+    <script>
+      createSlider({
+        slider: "slider",
+        autoPlay: true,
+        interval: 444,
+        loop: true,
+        maxSlides: 2,
+        controls: true,
+      });
+    </script>
+  </body>
+</html>
